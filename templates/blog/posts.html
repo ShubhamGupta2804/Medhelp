@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+.header {
+  padding: 2px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+<div class="header">
+  
+  <a href="/blog" style="text-decoration: none; color: black" ><h2>Medshare's Blog</h2></a>  
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card" >
+        <h2>{{posts.title}}</h2>
+        <h5>{{posts.created_at}}</h5>
+        <p>{{posts.body}}</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

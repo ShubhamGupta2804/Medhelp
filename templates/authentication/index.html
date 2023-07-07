@@ -18,12 +18,12 @@
     {% endfor %}
     
 
-    <h3>Welcome to Adlib Atrs!</h3>
+    <h3>Welcome to MedShare</h3>
 
 
     {% if user.is_authenticated %}
-    <h3>Hello {{fname}}!</h3>
-    <h4>You're successfully logged in.</h4>
+    <!-- <h3>Hello {{fname}}!</h3>
+    <h4>You're successfully logged in.</h4> -->
     <button type="submit"><a href="/signout">SignOut</a></button>
     {% else %}
     <button type="submit"><a href="/signup">SignUp</a></button>

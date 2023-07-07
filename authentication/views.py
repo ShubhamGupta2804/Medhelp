@@ -5,7 +5,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate,login,logout
 # Create your views here.
 def home(request):
-    return render(request,'authentication/index.html')
+    return render(request,'authentication/index1.html')
 
 def signup(request):
 
@@ -57,14 +57,17 @@ def signin(request):
         if user is not None:
             login(request,user)
             fname = user.first_name
-            return render(request,'authentication/index.html',{'fname':fname})
+            return render(request,'authentication/logout.html',{'fname':fname})
         else:
             messages.error(request,"Wrong id or password")
-            return redirect('home')
+            return redirect('/home')
         
     return render(request,'authentication/signin.html')
 
 def signout(request):
     logout(request)
     messages.success(request,"Logged out successfully !!!")
-    return redirect('home')
+    return render(request,'authentication/index1.html')
+
+
+

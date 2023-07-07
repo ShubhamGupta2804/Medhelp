@@ -1,0 +1,176 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+    {% for message in messages %}
+    
+    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+        <strong>Message:</strong> {{ message }}
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+    </div>
+    {% endfor %}
+    <!-- <div class="container"> -->
+    <div class="topnav" id="myTopnav">
+        <a href="/home" class="active">Home</a>
+        <a href="/list-medicines">Donate Medicines</a>
+        <a href="contact">Contact Us</a>
+        <a href="/blog">Blog</a>
+        <a href="/signout">LogOut</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="hp" style="padding-left:16px">
+        <h2>The HelpMed Group</h2>
+        <!-- <p>Resize the browser window to see how it works.</p> -->
+    </div>
+
+    <img width="800" height="626" alt="" title=""
+        data-srcset="https://th.bing.com/th/id/OIP.sCgrh5retNFRM8L0DHJSGAHaF7?pid=ImgDet&w=1024&h=819&rs=1 800w, https://th.bing.com/th/id/OIP.sCgrh5retNFRM8L0DHJSGAHaF7?pid=ImgDet&w=1024&h=819&rs=1 480w"
+        data-src="https://th.bing.com/th/id/OIP.sCgrh5retNFRM8L0DHJSGAHaF7?pid=ImgDet&w=1024&h=819&rs=1"
+        data-sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw"
+        class="wp-image-319 lazyloaded"
+        src="https://th.bing.com/th/id/OIP.sCgrh5retNFRM8L0DHJSGAHaF7?pid=ImgDet&w=1024&h=819&rs=1"
+        sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) 800px, 100vw"
+        srcset="https://th.bing.com/th/id/OIP.sCgrh5retNFRM8L0DHJSGAHaF7?pid=ImgDet&w=1024&h=819&rs=1 800w, https://th.bing.com/th/id/OIP.sCgrh5retNFRM8L0DHJSGAHaF7?pid=ImgDet&w=1024&h=819&rs=1 480w">
+
+
+    <div class="right">
+        <p>There are many people in our society who cannot afford the high cost of medications, particularly those who
+            are uninsured or underinsured. This often results in individuals not taking their prescribed medications,
+            which can lead to serious health consequences. Additionally, there is a significant amount of medication
+            waste that occurs due to the over-prescription of medication or when individuals do not finish their entire
+            prescription. </p>
+    </div>
+
+    </div>
+    <!-- </div> -->
+
+    <div
+        class="et_pb_with_border et_pb_module et_pb_text et_pb_text_2 et_pb_text_align_left et_pb_bg_layout_light et_had_animation">
+
+
+        <div class="w3-container">
+            <h2></h2>
+            <p class="w3-large"></p>
+        </div>
+
+        <div class="w3-row w3-border">
+            <div class="w3-container w3-half w3-white">
+                <!-- <h2>w3-half</h2> -->
+                <h3>Our Mission is to recycle medicines, thereby reducing the medical waste and at the same time
+                    reducing
+                    the medical costs incurred by the under privileged community</h3>
+
+            </div>
+            <div class="w3-container w3-half">
+                <p>We often are left over with surplus medicines. Many a times, we do not consume all the medicines
+                    from a bottle or a strip and then are faced with a dilemma as to what to do with them. On the other
+                    hand there are several people who are in need of such expensive medicines in the course of their
+                    treatment, but cant afford to buy these.
+
+                    ShareMeds was brainchild of three young boys: Urjil, Youg and Haard. They understood the dilemma
+                    faced by those who had surplus medicines as well as those who are medicine deficit. They devised a
+                    technique to bridge the gap —- they would collect surplus and donate to the deficit areas. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="clearfix">
+        <div class="box" style="background-color:#daaaaa">
+            <h2>Our Mission</h2>
+            <ul>
+                <li>To bridge the gap between surplus community and deficit community</li>
+                <li>To ensure that surplus medicine is utilised in the correct manner</li>
+                <li>To ensure that the underprivilege community is not devoid of proper medical care.</li>
+                <li>To reduce medical waste</li>
+            </ul>
+        </div>
+        <div class="box" style="background-color:#ccc">
+            <h4>WE NEED YOU!!</h4>
+            <h4>Any one can participate</h4>
+            <p>Whether you are a school going kid, or a senior citizen, You can volunteer help our cause in the
+                following ways</p>
+            <ul>
+                <li>Install drop boxes at your locality and society after taking due permissions</li>
+                <li>Collect medicines from your drop boxes and send it to main collection center, in Mumbai</li>
+                <li>Organize collection drives</li>
+                <li>Donate the medicines to the respective destination</li>
+                <li>Get ideas and suggestions of places where the medicines could be donated.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="et_pb_row et_pb_row_3">
+        <div class="et_pb_column et_pb_column_4_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough et-last-child">
+
+
+            <div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+
+
+                <div class="et_pb_text_inner">
+                    <h2>Our Story</h2>
+                    <h4>We are four friends named Pooja, Shubham, Harsh, and Piyush who are deeply concerned about the
+                        wastage of medicine in our community. We seen firsthand how much medicine was thrown away and
+                        how it could have been used to help those in need.
+
+                        Together, We decided to do something about it. We came up with the idea of creating a website
+                        where people could donate their unused medicine to those who could not afford it. They worked
+                        tirelessly to bring their idea to life, designing the website and reaching out to people in
+                        their community to spread the word. </h4>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="myDiv">
+
+    </div>
+
+    <div class="et_pb_module et_pb_text et_pb_text_6  et_pb_text_align_center et_pb_bg_layout_light">
+        <div class="et_pb_text_inner">
+            <h2>Thank You..</h2>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
